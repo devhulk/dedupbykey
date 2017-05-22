@@ -1,0 +1,25 @@
+{
+  "name": "dedupbykey",
+  "version": "1.0.5",
+  "description": "takes filepath and key to dedup array of objects",
+  "files": [
+    "index.js"
+  ],
+  "bin": {
+    "dedupbykey": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "devhulk",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "duplicate",
+    "lodash",
+    "node"
+  ]
+}
