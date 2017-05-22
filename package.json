@@ -1,13 +1,13 @@
 {
   "name": "dedupbykey",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "takes filepath and key to dedup array of objects",
   "files": [
     "index.js"
   ],
   "bin": {
     "dedupbykey": "index.js"
-  },  
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/devhulk/dedupbykey"
