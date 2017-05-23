@@ -25,6 +25,7 @@ dedupbykey <file> <keys...>
 *Input*
 
 ```
+[
 {
     _id : '5153645',
     serialnumber : '12345'
@@ -33,6 +34,7 @@ dedupbykey <file> <keys...>
     _id : '8778653',
     serialnumber : '12345'
 }
+]
 ```
 
 *Run Command*
@@ -44,10 +46,12 @@ dedupbykey examplefile.json serialnumber
 *Output*
 
 ```
+[
 {
     _id : '8778653',
     serialnumber : '12345'
 }
+]
 ```
 
 Use a redirect to put output in file
@@ -62,6 +66,7 @@ dedupbykey examplefile.json serialnumber > nodup.json
 *Input*
 
 ```
+[
 {
     _id : '5153645',
     serialnumber : '12345',
@@ -78,7 +83,7 @@ dedupbykey examplefile.json serialnumber > nodup.json
     serialnumber : '12345',
     name : 'otherproduct'
 }
-
+]
 ```
 
 *Run Command*
@@ -90,6 +95,7 @@ dedupbykey examplefile.json serialnumber name
 *Output*
 
 ```
+[
 {
     _id : '8778653'
     serialnumber : '12345',
@@ -100,6 +106,7 @@ dedupbykey examplefile.json serialnumber name
     serialnumber : '12345',
     name : 'otherproduct'
 }
+]
 ```
 
 Use a redirect to put output in file
