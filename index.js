@@ -1,14 +1,23 @@
 #!/usr/bin/env node
-if(process.argv.length != 4) {
-    console.log("Usage: dedupbykey <file> <key>");
-    process.exit(-1);
-}
 
-let filePath = process.argv[2]
-let key = process.argv[3]
-
+let program = require('commander')
 let _ = require('lodash')
 let fs = require('fs')
-let data = JSON.parse(fs.readFileSync(filePath, 'utf8'))
-let destArray=  _.uniqBy(data, key)
-console.log(JSON.stringify(destArray,null,2))
+program
+  .arguments('<file> <keys...>')
+  .action((file,keys) => {
+    data  = JSON.parse(fs.readFileSync(file, 'utf8'))
+    let hash = {}
+    data.forEach((item) => {
+      let compositeKey = ''
+      keys.forEach((key) => {
+        compositeKey += item[key]
+      })
+      hash[compositeKey] = item
+    })
+      console.log(JSON.stringify(_.toArray(hash),null,4))
+  })
+
+program.parse(process.argv);
+
+if(program.args.length < 2) program.help()

@@ -22,12 +22,16 @@
   "author": "devhulk",
   "license": "MIT",
   "dependencies": {
+    "commander": "^2.9.0",
     "lodash": "^4.17.4"
   },
   "devDependencies": {},
   "keywords": [
     "duplicate",
     "lodash",
-    "node"
+    "node",
+    "composite key",
+    "dedup",
+    "dedupify"
   ]
 }
