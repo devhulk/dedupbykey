@@ -45,7 +45,7 @@ dedupbykey examplefile.json serialnumber
 
 ```
 {
-    _id : '',
+    _id : '8778653',
     serialnumber : '12345'
 }
 ```
