@@ -1,6 +1,6 @@
 {
   "name": "dedupbykey",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "takes filepath and key to dedup array of objects",
   "files": [
     "index.js"
