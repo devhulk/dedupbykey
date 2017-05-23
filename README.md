@@ -29,7 +29,7 @@ dedupbykey <file> <keys...>
 {
     _id : '5153645',
     serialnumber : '12345'
-}
+},
 {
     _id : '8778653',
     serialnumber : '12345'
